@@ -1,0 +1,159 @@
+/*CSS webpage dark mode ACME, created by Josip Bailey
+created 170122, last update 170622*/
+
+/*header styling applying black to expand image without stretching*/
+div.top {
+    border: 1px solid #010203;
+    background-color: #010203;
+    text-align: center;
+    align-content: center;
+}
+.title{
+    font-size: 2cm;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+/*start of the toggle button might delete*/
+div.toggle{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    margin: 0 10px;
+
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 18px;
+}
+.switch input {display: none;}
+.slider:before{
+    position: absolute;
+    content:"";
+    height: 25px;
+    width: 25px;
+    left: 2.5px;
+    bottom: 2.5px;
+    background-color: #010203;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+input:checked + .slider{
+    background-color: #ccc;
+}
+
+input:checked + .slider:before{
+    transform: translateX(25px);
+}
+/*end of button styling*/
+
+/*adjust text*/
+p{
+    margin-bottom: 4px;
+    margin-left: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.chapter{
+    margin-bottom: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1cm;
+    text-align: center;
+}
+
+/*contentTable styling*/
+.contentTable{
+    border: 5px solid white;
+    background-color: ;
+    max-width: 1000px;
+    margin: auto;
+    height: 700px;
+    overflow: scroll;
+}
+.contentTablePDF{
+    border: 5px solid white;
+    /*background-color: #181A18;*/
+    max-width: 1000px;
+    margin: auto;
+    height: 700px;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: white;  
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: crimson;  
+}
+
+/*drop down menu*/
+.wrapper{
+    width: 850px;
+    margin: auto;
+}
+.wrapper ul{
+    list-style: none;
+    margin-top: 5px;
+}
+.wrapper ul li{
+    background: #010203;
+    width: 170px;
+    border: 1px solid white;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-size: 14px;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper ul ul{
+    display: none;
+}
+.wrapper ul li:hover{
+    background: crimson;
+}
+/*not broken, just a FEATURE*/
+.wrapper ul li:hover > ul{/*messing with padding here to increase mouse accuracy and drop alignment*/
+    display: block;
+    margin: 0 0 -10em -2em;
+    padding: 0 0 -2em 2em;
+    z-index: 1;
+    position: relative;
+}
+.wrapper ul ul ul{
+    margin-left: 136px;
+    top: 0;
+    position: absolute;
+}
+/*adjust hyperlink colours*/
+a:link{
+    color: white;
+} 
+a:visited{
+    color: white;
+}
+a:hover{
+    color: black;
+}

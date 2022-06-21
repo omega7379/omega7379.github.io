@@ -1,0 +1,106 @@
+<!--created by Josip Bailey
+Created 170122, Last Update 0622-->
+<!DOCTYPE html>
+<html lang="en">
+    <body class="background">
+        <header>
+            <head>
+                <!--meta data-->
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <!--Page tab title-->
+                <title>ACME TIKTOK</title>
+                <!--import css-->
+                <link id="theme" rel="stylesheet" type="text/css" href="acmeStyleGuideDark.css">
+                <!--enable switch for css pages-->
+                <script>
+                    function toggleTheme(){
+                        var theme = document.getElementsByTagName('link')[0];
+
+                        if (theme.getAttribute('href') == 'acmeStyleGuideDark.css'){
+                            theme.setAttribute('href', 'acmeStyleGuideLight.css');
+                        }
+                        else {
+                            theme.setAttribute('href', 'acmeStyleGuideDark.css');
+                        }
+                    }
+                </script>
+            </head>
+            <div class="top">
+                <img src="acmelogo.png" alt="Homescreen Logo" width="800" height="500">
+            </div>
+
+        </header>
+        <!--main section-->
+        <main>
+            <!--create toggle button to adjust switch colour-scheme-->
+            <span class="toggle">
+                <!--<p>theme</p>-->
+                <label class="switch">
+                    <input type="checkbox" onclick="toggleTheme()">
+                    <span class="slider"></span>
+                </label>
+            </span>
+
+            <!--dropdown menu-->
+            <div class="wrapper">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li>Departments
+                        <ul>
+                            <li>Support
+                                <ul>
+                                    <li><a href="Departments/Support/villianSupport.html">Villian Support</a></li>
+                                    <li><a href="Departments/Support/heroSupport.html">Hero Support</a></li>
+                                    <li><a href="Departments/Support/sidekickSupport.html">Sidekick Support</a></li>
+                                    <li><a href="Departments/Support/antiheroSupport.html">Antihero Support</a></li>
+                                    <li><a href="Departments/Support/memberSolutions.html">Member Solutions</a></li>
+                                    <li><a href="Departments/Support/itSupport.html">IT Support</a></li>
+                                </ul>
+                            </li>
+                            <li>Corporate
+                                <ul>
+                                    <li><a href="Departments/Corporate/corporate.html">Corporate</a></li>
+                                    <li><a href="Departments/Corporate/legal.html">Legal</a></li>
+                                    <li><a href="Departments/Corporate/collections.html">Collections</a></li>
+                                    <li><a href="Departments/Corporate/buildCrew.html">Build Crew</a></li>
+                                    <li><a href="Departments/Corporate/marketing.html">Marketing</a></li>
+                                    <li><a href="Departments/Corporate/communications.html">Communications</li>
+                                    <li><a href="Departments/Corporate/letters.html">Letters</a></li>
+                                    <li><a href="Departments/Corporate/humanResources.html">Human Resources</a></li>
+                                    <li><a href="Departments/Corporate/transportation.html">Transportation</a></li>
+                                    <li><a href="Departments/Corporate/publicRelations.html">Public Relations</a></li>
+                                    <li><a href="Departments/Corporate/evidenceDisposal.html">Evidence Disposal</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Major Events
+                        <ul>
+                            <li><a href="Events/borg.html">Borg Attack</a></li>
+                            <li><a href="Events/ork.html">Ork Invasion</a></li>
+                            <li><a href="Events/councilWar.html">Council War</a></li>
+                            <li><a href="Events/timeKeepers.html">Time Keepers</a></li>
+                            <li><a href="Events/TerryEscape.html">Terry's Escape</a></li>
+                            <li><a href="Events/hacked.html">The Hacker</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </br></br></br>
+            <!--main table holding the contents of the page-->
+            <div class="contentTable">
+                <table>
+                    <tr><td>
+                        <!--contents of page go here-->
+                        <p>
+                            text goes here
+                        </p>
+                    </tr></td>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
