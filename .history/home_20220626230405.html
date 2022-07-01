@@ -34,9 +34,15 @@ Created 170122, Last Update 240622-->
                     <input type="checkbox" onclick="toggleTheme()">
                     <span class="slider"></span>
                 </label>
-                <script type="text/javascript">
-                    document.getElementsById('theme').href='acmeStyleGuideLight'
-                </script>
+                <script type="text/javascript"
+                var theme = document.getElementsByTagName('link')[0];
+                if (theme.getAttribute('href') == 'acmeStyleGuideDark.css'){
+                    theme.setAttribute('href', 'acmeStyleGuideLight.css');
+                }
+                else {
+                    theme.setAttribute('href', 'acmeStyleGuideDark.css');
+                }
+            }
             </span>
 
             <!--dropdown menu-->

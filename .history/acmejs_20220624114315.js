@@ -9,6 +9,3 @@
     }
 }*/
 
-function toggleTheme(){
-    document.getElementsById('theme').href='acmeStyleGuideLight'
-}

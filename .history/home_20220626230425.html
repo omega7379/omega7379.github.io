@@ -35,8 +35,15 @@ Created 170122, Last Update 240622-->
                     <span class="slider"></span>
                 </label>
                 <script type="text/javascript">
-                    document.getElementsById('theme').href='acmeStyleGuideLight'
-                </script>
+                var theme = document.getElementsByTagName('link')[0];
+                if (theme.getAttribute('href') == 'acmeStyleGuideDark.css'){
+                    theme.setAttribute('href', 'acmeStyleGuideLight.css');
+                }
+                else {
+                    theme.setAttribute('href', 'acmeStyleGuideDark.css');
+                }
+            }
+            </script>
             </span>
 
             <!--dropdown menu-->

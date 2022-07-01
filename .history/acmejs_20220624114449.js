@@ -10,5 +10,5 @@
 }*/
 
 function toggleTheme(){
-    document.getElementsById('theme').href='acmeStyleGuideLight'
+    var theme = document.getElementsById('theme').href=
 }

@@ -7,8 +7,4 @@
     else {
         theme.setAttribute('href', 'acmeStyleGuideDark.css');
     }
-}*/
-
-function toggleTheme(){
-    document.getElementsById('theme').href='acmeStyleGuideLight'
 }
