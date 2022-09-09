@@ -8,6 +8,7 @@ function toggleTheme(){
         theme.setAttribute('href', 'acmeStyleGuideDark.css');
     }
 }
+toggleTheme.init()
 /*
 function toggleTheme(){
     document.getElementsById('theme').href='acmeStyleGuideLight'
